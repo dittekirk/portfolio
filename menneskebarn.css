@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Castoro', 'Lato', sans-serif, serif;
+  background-color: #edd1c4;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url('https://i.ibb.co/PZK5v0P/herobox.png');
+  background-size: cover;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px;
+  padding: 70px;
+  height: 400px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: left;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+
+
+h1 {
+  font-family: 'Castoro', serif;
+  font-size: 50px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
